@@ -6,8 +6,6 @@ from datetime import timedelta
 import json
 import logging
 import warnings
-import os
-
 warnings.filterwarnings('ignore')
 
 class DataProcessor:
@@ -17,10 +15,10 @@ class DataProcessor:
         self.password = password
         self.database = database
         self.api_url = api_url
-        self.logger = logging.getLogger('Data Processor')
+        self.logger = logging.getLogger('DataProcessor')
         self.logger.setLevel(logging.INFO)
         
-        # Create a FileHandler and set the file path for the log
+    # Create a FileHandler and set the file path for the log
         file_handler = logging.FileHandler('status.log')
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         file_handler.setFormatter(formatter)
@@ -47,16 +45,11 @@ class DataProcessor:
         return baseline, std, upper_limit, lower_limit
 
     def create_db_connection(self):
-        host = os.environ.get('HOST_DB')
-        user = os.environ.get('USER_DB')
-        password = os.environ.get('PASSWORD_DB')
-        db_name = os.environ.get('DB_NAME')
-
         connection = mysql.connector.connect(
-            host=host,
-            user=user,
-            password=password,
-            database=db_name
+            host=self.host,
+            user=self.user,
+            password=self.password,
+            database=self.database
         )
         return connection
 
@@ -113,13 +106,16 @@ class DataProcessor:
         df_combined.to_sql('testAnalytics', con=engine, if_exists='replace', index=False)
         connection.close()
 
-        self.logger.info('Data has completed successfully update to Database.')
+        self.logger.info('Data has been successfully sent to Databases.')
 
 def load_config(file_path):
     with open(file_path) as f:
         return json.load(f)
 
 if __name__ == '__main__':
+    # Load database credentials from config file
+    config = load_config('config.json')
+
     # Set up logging configuration
     logging.basicConfig(
         level=logging.INFO,
@@ -130,8 +126,14 @@ if __name__ == '__main__':
     # Replace the URL with the actual API URL
     api_url = 'http://103.82.92.229:5000/generate-data'
 
-    # Create data processor instance
-    data_processor = DataProcessor(api_url)
+    # Create data processor instance with credentials from config
+    data_processor = DataProcessor(
+        config['host'],
+        config['user'],
+        config['password'],
+        config['database'],
+        api_url
+    )
 
     # Process data
     data_processor.process_data()
