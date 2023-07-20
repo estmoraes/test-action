@@ -1,0 +1,3 @@
+2023-07-20 15:41:40,707 - DataProcessor - INFO - Starting data processing...
+2023-07-20 15:42:01,065 - DataProcessor - INFO - Data processing completed successfully.
+2023-07-20 15:42:22,776 - DataProcessor - INFO - Data has been successfully sent to Databases.
