@@ -2,7 +2,7 @@ name: Analytics Pipeline
 
 on:
   schedule:
-    - cron: '6-59/5 * * * *' # At every 5th minute from 6 through 59.
+    - cron: '0/5 * * * *' # At every 5th minute from 6 through 59.
 
 jobs:
   build:
