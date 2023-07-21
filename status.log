@@ -400,3 +400,6 @@
 2023-07-21 20:52:00,235 - DataProcessor - INFO - Starting data processing...
 2023-07-21 20:52:13,703 - DataProcessor - INFO - Data processing completed successfully.
 2023-07-21 20:52:34,610 - DataProcessor - INFO - Data has been successfully sent to Databases.
+2023-07-21 20:59:41,019 - DataProcessor - INFO - Starting data processing...
+2023-07-21 20:59:56,122 - DataProcessor - INFO - Data processing completed successfully.
+2023-07-21 21:00:20,701 - DataProcessor - INFO - Data has been successfully sent to Databases.
