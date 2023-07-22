@@ -640,3 +640,6 @@
 2023-07-22 15:21:46,641 - DataProcessor - INFO - Starting data processing...
 2023-07-22 15:21:52,137 - DataProcessor - INFO - Data processing completed successfully.
 2023-07-22 15:22:07,287 - DataProcessor - INFO - Data has been successfully sent to Databases.
+2023-07-22 15:29:15,549 - DataProcessor - INFO - Starting data processing...
+2023-07-22 15:29:20,519 - DataProcessor - INFO - Data processing completed successfully.
+2023-07-22 15:29:33,819 - DataProcessor - INFO - Data has been successfully sent to Databases.
