@@ -820,3 +820,6 @@
 2023-07-23 04:33:51,492 - DataProcessor - INFO - Starting data processing...
 2023-07-23 04:33:57,000 - DataProcessor - INFO - Data processing completed successfully.
 2023-07-23 04:34:10,598 - DataProcessor - INFO - Data has been successfully sent to Databases.
+2023-07-23 04:41:16,939 - DataProcessor - INFO - Starting data processing...
+2023-07-23 04:41:22,330 - DataProcessor - INFO - Data processing completed successfully.
+2023-07-23 04:41:35,590 - DataProcessor - INFO - Data has been successfully sent to Databases.
