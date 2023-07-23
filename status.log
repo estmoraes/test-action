@@ -1111,3 +1111,6 @@
 2023-07-23 22:56:32,155 - DataProcessor - INFO - Starting data processing...
 2023-07-23 22:56:37,704 - DataProcessor - INFO - Data processing completed successfully.
 2023-07-23 22:56:49,850 - DataProcessor - INFO - Data has been successfully sent to Databases.
+2023-07-23 23:21:07,935 - DataProcessor - INFO - Starting data processing...
+2023-07-23 23:21:13,471 - DataProcessor - INFO - Data processing completed successfully.
+2023-07-23 23:21:27,586 - DataProcessor - INFO - Data has been successfully sent to Databases.
