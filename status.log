@@ -1243,3 +1243,6 @@
 2023-07-24 10:39:31,679 - DataProcessor - INFO - Starting data processing...
 2023-07-24 10:39:37,158 - DataProcessor - INFO - Data processing completed successfully.
 2023-07-24 10:39:51,291 - DataProcessor - INFO - Data has been successfully sent to Databases.
+2023-07-24 10:47:08,046 - DataProcessor - INFO - Starting data processing...
+2023-07-24 10:47:13,383 - DataProcessor - INFO - Data processing completed successfully.
+2023-07-24 10:47:25,408 - DataProcessor - INFO - Data has been successfully sent to Databases.
